@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Faraday's Kalavara - Login</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="login-body">
+  <div class="login-container">
+    <h1>Faraday's Kalavara</h1>
+    <input type="password" id="password" placeholder="Enter Password" />
+    <button onclick="checkPassword()">Login</button>
+  </div>
+
+  <script>
+    function checkPassword() {
+      const password = document.getElementById("password").value;
+      if (password === "ALPHABOYS") {
+        window.location.href = "main.html";
+      } else {
+        alert("Incorrect Password!");
+      }
+    }
+  </script>
+</body>
+</html>
